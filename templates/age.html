@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+nav{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .logo{
+            font-size: xx-large;
+            letter-spacing: 2px;
+            color: aliceblue;
+
+        }
+        span{
+            color: yellow;
+        }
+        .main a{
+            text-decoration: none;
+            /* color:black; */
+            color: aliceblue;
+
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        .main a:hover{
+        /* background:transparent; */
+        border: 1px solid rgb(19, 19, 7);
+        color:white;
+        border-radius: 1PX;
+        }
+
+        h1{
+            padding-left:10%;
+        }
+        input{
+            
+	        background-color:white;
+	        border: none;
+	        padding: 12px 15px;
+	        margin: 8px 0;
+            border-radius: 10%; 
+	        cursor: pointer;
+            font-size: x-large;
+        }
+        lable{
+            font-size: x-large;
+            color: black;
+        }
+        p{
+            font-size: x-large;
+            padding-left:10%;
+        }
+        .calculate{
+            margin-top: 50px;
+            margin-left: 60%;
+	        background-color: green;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+            font-size: large;
+            margin-left: 80px;
+        }
+        .div1{
+            height: 40px;
+            width: 50%;
+            background-color: rgb(9, 73, 113);
+            color: white;
+            margin-left: 20%;
+            text-align: center;
+        }
+        .div2{
+            margin-top: 5px;
+            height: 250px;
+            width: 50%;
+            background-color: rgb(201, 224, 238);
+            color: white;
+            margin-left: 20%;
+            text-align: center;
+        }
+        .div3{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 85%;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+<body>    
+    <nav>
+        <div class="logo">  
+            Calculater<span>.py</span>
+          </div>
+        <div class="main">
+            <a href="#">Home</a>
+            <a href="/">Age Calculater</a>
+            <a href="/calculater">calculater</a>
+            <a href="/conversion">Conversion</a>
+            <a href="/table">Tables</a>
+            <a href="/operation">operation(sqroot)</a>
+        </div>
+    </nav>
+
+<div class="div3">
+
+    <h1>Age Calculator</h1>
+    <p>The Age Calculator can determine the age or interval between two dates. <br>
+        The calculated age will be displayed in years, months,days.</p>
+
+    <div class ="div1">
+        <p>Modify the values and click the calculate button to use </p>
+    </div>
+    <div class="div2">
+        <form method="POST">
+            <lable> current_date:</lable>
+            <input type="date" name="date" required><br>
+            <lable>birth_date:</lable>
+            <input type="date" name="date1" required><br>
+            <input type="submit" value="Calculate" class="calculate">
+        </form>
+    </div>
+
+    <h1> Age : </h1>
+    <p>years : {{result3}} </p>
+    <p> months : {{result2}} </p>
+    <p> days : {{result1}} </p>
+
+</div>
+</body>
+</html>
