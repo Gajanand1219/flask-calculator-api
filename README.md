@@ -1,4 +1,7 @@
 # flask-calculator-api
+
+![Screenshot 2024-09-22 172245](https://github.com/user-attachments/assets/5393431a-413f-4ee2-a797-8ff8b939e4ba)
+
 Description:
 This repository contains a simple Python Flask API that provides the following functionalities:
 
@@ -47,3 +50,11 @@ Description: Converts between centimeters and meters.
 Example:
 Request: GET /convert_length?value=200&unit=cm
 Response: {"result": "200 cm is 2.0 m"}
+
+
+
+
+
+
+
+
