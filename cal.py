@@ -69,7 +69,7 @@ def conversition():
             result1 = num /1000
             KG_gram='KG_gram'
         elif operation =='me_to_cm':
-            result2 = num * 100
+            result2 = num * 100.0
             cm='cm'
         elif operation =='cm_to_me':
             result3 = num/100
